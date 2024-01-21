@@ -1,10 +1,11 @@
 import React from 'react';
 import { Button, Container, Paper, Typography } from '@mui/material';
-import MyDrawer from './MyDrawer';
+import NavBar from '../components/Navbar';
+
 function App() {
   return (
     <div>
-      <MyDrawer />
+      <NavBar />
       <Container maxWidth="sm">
         <Paper elevation={3} style={{ padding: '20px', marginTop: '50px' }}>
           <Typography variant="h4" gutterBottom>
@@ -13,7 +14,7 @@ function App() {
           <Typography variant="body1" paragraph>
             Welcome to your Material-UI powered website.
           </Typography>
-          <Button variant="contained" color="primary" onClick={() => {window.location.href = "/page2";}}>
+          <Button variant="contained" color="primary" sx={{ mt: 2 }} onClick={() => {window.location.href = "/page2";}}>
             Click me
           </Button>
         </Paper>

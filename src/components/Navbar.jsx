@@ -3,7 +3,7 @@ import { AppBar, Toolbar, IconButton, Typography, Drawer, List, ListItem, ListIt
 import MenuIcon from '@mui/icons-material/Menu';
 import { ArrowBack } from '@mui/icons-material';
 
-const MyDrawer = () => {
+const NavBar = () => {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
 
   const toggleDrawer = (open) => (event) => {
@@ -32,7 +32,7 @@ const MyDrawer = () => {
               <ArrowBack />
           </ListItem>
           <ListItem button>
-            <ListItemText primary="Home"  />
+            <ListItemText primary="Home" />
           </ListItem>
           <ListItem button>
             <ListItemText primary="About" />
@@ -46,4 +46,4 @@ const MyDrawer = () => {
   );
 };
 
-export default MyDrawer;
+export default NavBar;
