@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, IconButton, Typography, Drawer, List, ListItem, ListItemText } from '@mui/material';
+import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import { ArrowBack } from '@mui/icons-material';
 
@@ -20,9 +21,11 @@ const NavBar = () => {
           <IconButton edge="start" color="inherit" onClick={toggleDrawer(true)} sx={{ mr: 2 }}>
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div">
-            My App
-          </Typography>
+          <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+            <Typography variant="h6" component="div">
+              My App
+            </Typography>
+          </Link>
         </Toolbar>
       </AppBar>
 
@@ -32,13 +35,13 @@ const NavBar = () => {
               <ArrowBack />
           </ListItem>
           <ListItem button>
-            <ListItemText primary="Home" />
+            <ListItemText primary="Home" onClick={() => window.location.href = "/"} />
           </ListItem>
           <ListItem button>
-            <ListItemText primary="About" />
+            <ListItemText primary="About" onClick={() => window.location.href = "/about"} />
           </ListItem>
           <ListItem button>
-            <ListItemText primary="Contact" />
+            <ListItemText primary="Contact" onClick={() => window.location.href = "/contact"} />
           </ListItem>
         </List>
       </Drawer>
