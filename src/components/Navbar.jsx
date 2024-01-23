@@ -16,14 +16,14 @@ const NavBar = () => {
 
   return (
     <div>
-      <AppBar>
+      <AppBar elevation={10}>
         <Toolbar>
           <IconButton edge="start" color="inherit" onClick={toggleDrawer(true)} sx={{ mr: 2 }}>
             <MenuIcon />
           </IconButton>
           <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
             <Typography variant="h6" component="div">
-              My App
+              MochaSteve
             </Typography>
           </Link>
         </Toolbar>
