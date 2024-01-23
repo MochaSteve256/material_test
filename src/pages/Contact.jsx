@@ -5,7 +5,7 @@ function Contact() {
     return (
         <div>
             <Container maxWidth="sm">
-                <Paper elevation={3} style={{ padding: '20px', marginTop: '50px' }}>
+                <Paper elevation={5} style={{ padding: '20px', marginTop: '50px' }}>
                     <Typography variant="h2" gutterBottom>
                         Contact
                     </Typography>

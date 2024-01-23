@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <AppBar position="static">
+      <AppBar>
         <Toolbar>
           <IconButton edge="start" color="inherit" onClick={toggleDrawer(true)} sx={{ mr: 2 }}>
             <MenuIcon />
