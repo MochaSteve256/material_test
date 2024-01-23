@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
-//pages etc.
+//pages components etc
 import Layout from './pages/Layout';
 import theme from './theme';
 

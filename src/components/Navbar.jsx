@@ -23,7 +23,7 @@ const NavBar = () => {
           </IconButton>
           <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
             <Typography variant="h6" component="div">
-              My App
+              MochaSteve
             </Typography>
           </Link>
         </Toolbar>
